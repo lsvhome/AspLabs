@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ProjectGuid>ef0d9366-0aa6-4c3d-9ee2-4145bdaa5aa8</ProjectGuid>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <Compile Include="..\*.cs">
+       <Link>%(RecursiveDir)\%(Filename)%(Extension)</Link>
+    </Compile>
+    <Compile Remove="..\Microsoft.Extensions.WebEncoders.cs" />
+  </ItemGroup>
+
+</Project>
